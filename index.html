@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Final project</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <header id="header" class="header">
+            <nav class="nav">
+            <div class="nav-logo"><img src="img/metta-logo.png"></div>
+            <ul class="nav-items">
+                <li class="nav-item"><a href="#metta-content" class="nav-item-link">metta</a></li>
+                <li class="nav-item"><a href="#adapt ogens" class="nav-item-link">adapt ogens</a></li>
+                <li class="nav-item"><a href="#drinkmetta" class="nav-item-link">drink</a></li>
+            </ul>
+            </nav>
+            <button id="burger-icon" class="burger-icon">
+                <div class="burger-icon-item"></div>
+            </button>
+            <div class="menu-box"><img src="img/metta-logo.png"></div>
+        </header>
+        <div class="block-menu">
+            <img class="block-menu-pic" src="img/metta-fly.png">
+            <span>Elevation of body and mind.</span>
+            <div class="block-menu-button">
+                <a href="#metta-content" class="block-menu-button-a">Drink Metta</a>
+            </div>
+            <div class="block-menu-img"><img src="img/vector-line.png"></div>
+        </div>
+        <div class="menu-content" id="metta-content">
+            <div class="menu-content-left">
+                <h2>The world’s<br>first natural<br>awareness<br>blend</h2><p>Metta's flavor is berry, ginger, lemon with a hint of schizandra. Metta elevates physical and mental performance and is easy to drink any time of day.</p><h3>Taste Metta</h3>
+            </div>
+            <div class="menu-content-center"><div class="menu-content-center-radius"></div><img src="img/metta-drink.png" class="menu-content-img"></div>
+            <div class="menu-content-right">
+                <div class="menu-content-right-list"><h3>Adaptogenic herbs</h3><span>Relieve stress naturally</span></div>
+                <div class="menu-content-right-list"><h3>Ginger</h3><span>Reduces muscle pains</span></div>
+                <div class="menu-content-right-list"><h3>Lemon</h3><span>Rich source of Vitamin C</span></div>
+                <div class="menu-content-right-list"><h3>Blueberry</h3><span>High in antioxidants</span></div>
+                <div class="menu-content-right-list"><h3>Sea salt</h3><span>Nourishes adrenal glands</span></div>
+            </div>
+        </div>
+        <div class="menu-content-down">
+            <span>“I swear I felt more energized after just half a can. I’ll keep some for when I’m feeling sluggish.”</span>
+            <div class="menu-content-down-pic"><img src="img/p1.png"><img src="img/p2.png"><img src="img/p3.png"><img src="img/p4.png"><img src="img/p5.png"></div>
+        </div>
+        <div class="content-training" id="adapt ogens">
+            <div class="menu-content-left"><h2>Elevate your energy level by decreasing your stress</h2><p>Chronic stress destroys performance. Metta utilizes the benefits of adaptogens to naturally elevate your mental and physical performance, while helping to correct any underlying stress.</p><h3>HOW IT WORKS</h3></div>
+            <div><img src="img/run-pic.png"></div>
+        </div>
+        <div class="content-training-statistics"><span class="Stressed">Stressed</span><span class="Energy">Energy</span></div>
+        <div class="content-training-img">
+            <div><img src="img/sport-pic1.png"><span>Improve Performance</span></div>
+            <div><img src="img/sport-pic2.png"><span>Decrease Fatigue</span></div>
+            <div><img src="img/sport-pic3.png"><span>Heighten Awareness</span></div>
+        </div>
+        <div class="adapt-ogens">
+            <div class="adapt-ogens-text"><h2>Herbs that<br>allow your body<br>to adapt.</h2><p>Metta is built around adaptogenic herbs. These amazing plants grow in the most inhospitable environments on earth. They develop unique qualities to survive. When we take them we feel those unique benefits.</p><h3>How it works</h3></div>
+            <div class="adapt-ogens-pics">
+                <div><img src="img/heal1.png"><span>Rhodiola</span></div>
+                <div><img src="img/heal2.png"><span>Ginseng</span></div>
+                <div><img src="img/heal3.png"><span>Astragalus</span></div>
+                <div><img src="img/heal4.png"><span>Schisandra</span></div>
+            </div>
+        </div>
+        <div class="quote">
+            <div><h3>“Metta is the first thing I pack in my gym bag every morning, I love it!”</h3><span>- Casey Norris</span></div>
+        </div>
+        <div class="drinkmetta" id="drinkmetta">
+            <div class="drinkmetta-img">
+                <img src="img/drinkdata_pic1.jpg">
+                <img src="img/drinkdata_pic2.jpg">
+                <img src="img/drinkdata_pic3.jpg">
+                <img src="img/drinkdata_pic4.jpg">
+            </div>
+        </div>
+        <footer>
+            <a href="#header"><span>Scroll to top</span></a>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/slick.min.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $("#carousel").slick({
+              dots: true
+            });
+          });
+        </script>
+        <script type="text/javascript">
+          let burger = document.querySelector("#burger-icon");
+          let header = document.querySelector("#header");
+          burger.onclick = function() {
+            header.classList.toggle("menu-open");
+            $("main").toggleClass('main-menu-open');
+          }
+        </script>
+    </body>
+</html>
